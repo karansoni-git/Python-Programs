@@ -1,0 +1,12 @@
+from tkinter import *
+parent = Tk(className="Grid Layout")
+parent.geometry('400x400')
+bluebtn = Button(parent,text="Blue Button" ,width="20" ,height="20",bg="blue",fg="white",activebackground="green",activeforeground="white")
+redbtn = Button(parent,text="Red Button",width="20",height="20",bg="red",fg="black",activebackground="black",activeforeground="white")
+greenbtn = Button(parent,text="Green Button",width="20",height="20",bg="green",fg="black",activebackground="blue",activeforeground="white")
+blackbtn = Button(parent,text="Black Button",width="20",height="20",bg="black",fg="white",activebackground="red")
+bluebtn.grid(row=0,column=0)
+redbtn.grid(row=0,column=1)
+greenbtn.grid(row=1,column=0)
+blackbtn.grid(row=1,column=1)
+parent.mainloop()
