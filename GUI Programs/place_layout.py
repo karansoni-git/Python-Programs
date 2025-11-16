@@ -1,0 +1,10 @@
+from tkinter import *
+parent = Tk(className="place layout")
+parent.geometry("500x500")
+bluebtn = Button(text="Blue Button",bg="blue",fg="white",width=30)
+redbtn = Button(text="Blue Button",bg="red",fg="white",width=30)
+yellowbtn = Button(text="Blue Button",bg="yellow",fg="black",width=30)
+bluebtn.place(x=20,y=40)
+redbtn.place(x=40,y=80)
+yellowbtn.place(x=60,y=120)
+parent.mainloop()
